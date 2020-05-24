@@ -13,5 +13,11 @@ class StringModifierTest {
 		StringModifier sm = new StringModifier();
 		assertEquals("BA",sm.reverseLast2Chars("AB"));
 	}
+	
+	@Test
+	void testWith4Chars() {
+		StringModifier sm = new StringModifier();
+		assertEquals("ABDC",sm.reverseLast2Chars("ABCD"));
+	}
 
 }
