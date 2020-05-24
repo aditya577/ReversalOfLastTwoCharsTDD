@@ -30,5 +30,11 @@ class StringModifierTest {
 		assertEquals("A",sm.reverseLast2Chars("A"));
 	}
 	
+	@Test
+	void testWith0Chars() {
+		assertEquals("",sm.reverseLast2Chars(""));
+	}
+	
+	
 
 }
