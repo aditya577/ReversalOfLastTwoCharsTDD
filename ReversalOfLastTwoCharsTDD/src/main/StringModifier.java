@@ -3,10 +3,13 @@ package main;
 public class StringModifier {
 
 	public String reverseLast2Chars(String str) {
-		char firstChar = str.charAt(0);
-		char secondChar = str.charAt(1);
+		int len = str.length();
 		
-		return ""+secondChar+firstChar;
+		
+		char secondLastChar = str.charAt(len-2);
+		char lastChar = str.charAt(len-1);
+		
+		return ""+lastChar+secondLastChar;
 	}
 
 }
